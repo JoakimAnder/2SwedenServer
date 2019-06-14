@@ -7,7 +7,7 @@ const cors = require("cors")
 
 app.listen(port, () => console.log("Server listening on port", port))
 
-app.use(cors)
+// app.use(cors())
 
 app.use("/api",apiRoutes)
 app.use("/api2",apiRoutes2)
