@@ -5,21 +5,17 @@
   "main": "server.js",
   "dependencies": {
     "axios": "^0.18.0",
-    "decode-google-map-polyline": "^1.0.1",
+    "cors": "^2.8.5",
     "dotenv": "^8.0.0",
-    "express": "^4.16.4",
-    "google-maps-react": "^2.0.2",
-    "react-alice-carousel": "^1.13.11",
-    "react-local-currency": "^1.0.0"
+    "express": "^4.16.4"
   },
   "devDependencies": {
     "concurrently": "^4.1.0",
     "nodemon": "^1.19.1"
   },
   "scripts": {
-    "server": "nodemon server.js",
-    "client": "cd client && npm run start",
-    "dev": "concurrently --kill-others-on-fail \" npm run server \" \" npm run client \"",
+    "start": "nodemon server.js",
+    "server": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
